@@ -4,11 +4,10 @@ export default function ProductCard({ product }) {
   return (
     <Link to={`/products/${product._id}`} className="product-card">
       <div className="product-card-image">
-        {product.imageUrl ? (
-          <img src={product.imageUrl} alt={product.title} />
-        ) : (
-          <div className="product-card-placeholder">{product.category}</div>
-        )}
+            <img
+                src={product.imageUrl || "/item%20not%20found.jpg"}
+                alt={product.title}
+            />
       </div>
       <div className="product-card-body">
         <h3>{product.title}</h3>
