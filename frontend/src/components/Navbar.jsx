@@ -14,9 +14,10 @@ export default function Navbar() {
 
   return (
     <header className="navbar">
-      <Link to="/" className="navbar-brand">
-        🏘️ Community Store
-      </Link>
+        <Link to="/" className="navbar-brand">
+            <div className="brand-title">District 6 Store</div>
+            <div className="brand-slogan">For Students By Students</div>
+        </Link>
       <nav className="navbar-links">
         <Link to="/">Marketplace</Link>
         <Link to="/bulletin">Bulletin Board</Link>
